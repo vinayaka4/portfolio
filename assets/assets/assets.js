@@ -1,4 +1,3 @@
-import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -36,9 +35,20 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import vin from './vin.jpg';
+import vr from './vr.png';
+import vr_dark from './vrdark.png'
+import react from './science.png'
+import unity from './unity.png'
+import mysql from './mysql.png'
+import android from './android.png'
+import jira from './jira.png'
+import coding from './coding.png'
+import coding_dark from './coding-dark.png'
+import github from './github-sign.png'
+import web from './layers.png'
+
 
 export const assets = {
-    user_image,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -76,6 +86,18 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     vin,
+    vr,
+    vr_dark,
+    unity,
+    jira,
+    android,
+    mysql,
+    react,
+    coding,
+    coding_dark,
+    github,
+    web
+
 };
 
 export const workData = [
@@ -102,18 +124,47 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Extended Reality', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    {
+        icon: assets.web_icon,
+        title: 'Web Design',
+        description: 'Web design involves creating visually appealing and user-friendly interfaces for websites, ensuring functionality and accessibility.',
+        link: ''
+    },
+    {
+        icon: assets.mobile_icon,
+        title: 'Mobile App Development',
+        description: 'Mobile app development focuses on building feature-rich, responsive, and intuitive applications for iOS and Android platforms.',
+        link: ''
+    },
+    {
+        icon: assets.ui_icon,
+        title: 'User Experience Design',
+        description: 'User Experience Design encompasses UI/UX design, user testing, and UX research to craft seamless, engaging, and data-driven experiences that prioritize usability and user satisfaction.',
+        link: ''
+    },
+    {
+        icon: assets.vr_dark,
+        title: 'Extended Reality',
+        description: 'Extended Reality (XR) integrates innovative design with immersive technologies such as AR and VR to create dynamic, interactive experiences.',
+        link: ''
+    },
+    {
+        icon: assets.web,
+        title: 'Full Stack Development',
+        description: 'Full stack development covers the end-to-end process of building web applications, encompassing both front-end interfaces and back-end systems.',
+        link: ''
+    }
+];
+
+
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript, React, Next Js,Python,Java,SQL' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript, React, NextJs, R, Python,SQL,Java' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Masters in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git,
+    assets.mysql, assets.unity, assets.android, assets.jira, assets.react, assets.github
 ];

@@ -3,22 +3,25 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from "motion/react";
 
-function Experiences() {
+const Experiences = ({ isDarkMode }) => {
     const experiences = [
         {
             title: 'Teaching Assistant',
             description: 'Assisted in teaching Web Development at Northeastern University. Guided students through complex coding assignments and enhanced their learning experience.',
             icon: assets.edu_icon,
+            dark_icon: assets.edu_icon_dark
         },
         {
             title: 'Research Assistant',
-            description: 'Collaborated on a VR accessibility project to make immersive technologies more inclusive for disabled users. Contributed to a CHI publication.',
-            icon: assets.code_icon,
+            description: 'Collaborated on a VR accessibility project to make immersive technologies more inclusive for disabled users. Contributed to a CHI publication.Worked on VR based training for formerly Incarcerated women',
+            icon: assets.vr,
+            dark_icon: assets.vr_dark
         },
         {
-            title: 'Frontend Developer Intern',
-            description: 'Conducted a usability study and implemented design improvements at MoneyHop, increasing usability by 40%.',
-            icon: assets.ui_icon,
+            title: 'Frontend Developer and HCI Intern',
+            description: 'Worked as Front end Intern and  as HCI intern. Conducted a usability study and implemented design improvements at MoneyHop, increasing usability by 40%.',
+            icon: assets.coding,
+            dark_icon: assets.coding_dark,
         },
     ];
 
@@ -59,7 +62,7 @@ function Experiences() {
                         className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer
                          hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'
                     >
-                        <Image src={experience.icon} alt={experience.title} className='w-10' />
+                        <Image src={isDarkMode ? experience.dark_icon : experience.icon} alt={experience.title} className='w-10' />
                         <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{experience.title}</h3>
                         <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                             {experience.description}
