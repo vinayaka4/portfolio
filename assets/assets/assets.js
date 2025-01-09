@@ -46,7 +46,9 @@ import coding from './coding.png'
 import coding_dark from './coding-dark.png'
 import github from './github-sign.png'
 import web from './layers.png'
-
+import linkedin from './linkedin.png'
+import socail from './social.png'
+import git_dark from './git_dark.png'
 
 export const assets = {
     code_icon,
@@ -96,7 +98,10 @@ export const assets = {
     coding,
     coding_dark,
     github,
-    web
+    web,
+    linkedin,
+    socail,
+    git_dark
 
 };
 
@@ -166,5 +171,6 @@ export const infoList = [
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git,
-    assets.mysql, assets.unity, assets.android, assets.jira, assets.react, assets.github
+    assets.mysql, assets.unity, assets.android, assets.jira, assets.react,
+    assets.git_dark
 ];

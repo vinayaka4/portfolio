@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'motion/react';
 
-function Header() {
+const Header = ({ isDarkMode }) => {
     return (
         <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-56'>
             {/* Profile Image */}
@@ -42,7 +42,7 @@ function Header() {
                 I am an HCI Researcher and Software Developer from Boston, USA, with a Master's Degree from Northeastern University, Boston.
             </motion.p>
 
-            {/* Links */}
+            {/* Links Section */}
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
                 {/* Contact Me Link */}
                 <motion.a
@@ -66,6 +66,35 @@ function Header() {
                      border-gray-500 flex items-center gap-2 bg-white dark:text-black'
                 >
                     My Resume <Image src={assets.download_icon} alt="Download icon" className="w-4" />
+                </motion.a>
+            </div>
+
+            {/* Social Links Section */}
+            <div className="flex items-center justify-center gap-4 mt-6">
+                {/* LinkedIn Link */}
+                <motion.a
+                    initial={{ y: 30, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 1.4 }}
+                    href="https://www.linkedin.com/in/vinayaka-h-k"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full hover:scale-105 transition duration-300 dark:bg-transparent"
+                >
+                    <Image src={assets.linkedin} alt="LinkedIn" className="w-4" />
+                </motion.a>
+
+                {/* GitHub Link */}
+                <motion.a
+                    initial={{ y: 30, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 1.5 }}
+                    href="https://github.com/vinayaka4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center dark:bg-transparent w-8 h-8 border border-gray-500 rounded-full hover:scale-105 transition duration-300"
+                >
+                    <Image src={isDarkMode ? assets.git_dark : assets.github} alt="GitHub" className="w-4" />
                 </motion.a>
             </div>
         </div>
