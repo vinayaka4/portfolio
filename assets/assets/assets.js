@@ -107,26 +107,37 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Financial Management',
+        description: 'MERN Stack app for stock tracking.',
+        bgImage: '/stock.webp'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Geo Adventure App',
+        description: 'Android app with GPS-based gameplay.',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Review Analysis',
+        description: 'Data visualization using Python.',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'UI/UX Prototyping',
+        description: 'Axure-based design for NEU Co-op.',
         bgImage: '/work-4.png',
     },
-]
+    {
+        title: 'VR Accessibility',
+        description: 'CHI review on accessibility in VR.',
+        bgImage: '/Vr-acces.png'
+    },
+    {
+        title: 'VR Rehabilitation',
+        description: 'VR training for incarcerated women.',
+        bgImage: '/vr-project.jpg'
+    },
+];
+
 
 export const serviceData = [
     {

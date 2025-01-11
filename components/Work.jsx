@@ -62,7 +62,7 @@ const Work = ({ isDarkMode }) => {
                     ))}
                 </motion.div>
             </motion.div>
-            <motion.a
+            {/* <motion.a
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.1, delay: 0.5 }}
@@ -72,7 +72,7 @@ const Work = ({ isDarkMode }) => {
               dark:text-white dark:border-white dark:hover:bg-darkHover'>
                 Show more
                 <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='Right arrow' className='w-4' />
-            </motion.a>
+            </motion.a> */}
         </div>
     )
 }
