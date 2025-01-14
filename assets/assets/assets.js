@@ -107,6 +107,11 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'AI Trip Planner',
+        description: 'React app with Gemini AI and Google APIs for trip planning.',
+        bgImage: '/landing.webp'
+    },
+    {
         title: 'Financial Management',
         description: 'MERN Stack app for stock tracking.',
         bgImage: '/stock.webp'
@@ -137,6 +142,8 @@ export const workData = [
         bgImage: '/vr-project.jpg'
     },
 ];
+
+
 
 
 export const serviceData = [
