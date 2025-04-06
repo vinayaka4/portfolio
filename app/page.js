@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Volunteer from "@/components/Volunteer";
 import Work from "@/components/Work";
 import { useEffect, useState } from "react";
 
@@ -38,6 +39,7 @@ export default function Home() {
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Experiences isDarkMode={isDarkMode} />
+      <Volunteer isDarkMode={isDarkMode} />
       <Services isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
