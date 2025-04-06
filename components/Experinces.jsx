@@ -7,7 +7,7 @@ const Experiences = ({ isDarkMode }) => {
     const experiences = [
         {
             title: 'Frontend Developer',
-            description: 'Working as Front end developer at MAXWOOD FURNITURE. Developing and maintaining user-friendly E-commerce web applications using Shopify, Liquid, HTML, CSS, and JavaScript. Collaborating with cross-functional teams to deliver high-quality software solutions.',
+            description: 'Working as Front end developer at MAXWOOD FURNITURE. Developing and maintaining user-friendly E-commerce web applications using Shopify, Liquid, HTML, Tailwind-CSS, and JavaScript. Collaborating with cross-functional teams to deliver high-quality software solutions.',
             icon: assets.coding,
             dark_icon: assets.coding_dark,
         },
