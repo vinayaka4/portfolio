@@ -5,14 +5,12 @@ import { motion } from "motion/react";
 
 const Experiences = ({ isDarkMode }) => {
     const experiences = [
-
         {
             title: 'Frontend Developer',
-            description: 'Working as Front end developer at MaxWood Furniture. Developing and maintained user-friendly E-commerce web applications using Shopify, Liquid, HTML, CSS, and JavaScript. Collaborating with cross-functional teams to deliver high-quality software solutions.',
+            description: 'Working as Front end developer at MAXWOOD FURNITURE. Developing and maintaining user-friendly E-commerce web applications using Shopify, Liquid, HTML, CSS, and JavaScript. Collaborating with cross-functional teams to deliver high-quality software solutions.',
             icon: assets.coding,
             dark_icon: assets.coding_dark,
         },
-
         {
             title: 'Teaching Assistant',
             description: 'Assisted in teaching Web Development at Northeastern University. Guided students through complex coding assignments and enhanced their learning experience.',
